@@ -24,7 +24,7 @@ app.get("/", async (req, resp) => {
 
   const result = await collection.find().toArray();
 
-  console.log(result);
+  
 
   resp.render("students", { students: result });
 });
